@@ -6,7 +6,7 @@ execute pathogen#infect()
 cnoremap <C-a> <Home>
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
-cnoremap <C-d> <Delete>
+"cnoremap <C-d> <Delete>
 cnoremap <M-b> <S-Left>
 cnoremap <M-f> <S-Right>
 cnoremap <M-d> <S-Right><Delete>
@@ -25,6 +25,8 @@ cnoremap <M-d> <S-Right><Delete>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+nmap \c :SyntasticToggleMode<CR>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
