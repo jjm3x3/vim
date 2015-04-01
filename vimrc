@@ -19,8 +19,8 @@ cnoremap <M-d> <S-Right><Delete>
 :nmap \q :nohlsearch<CR>
 :nmap <C-e> :e#<CR>
 
-:nmap <C-n> :bNext<CR>
-:nmap <C-p> :bPrevious<CR>
+:nmap <C-n> :bnext<CR>
+:nmap <C-p> :bprev<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
