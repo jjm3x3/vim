@@ -3,6 +3,14 @@ execute pathogen#infect()
 :nmap j gj
 :nmap k gk
 
+cnoremap <C-a> <Home>
+cnoremap <C-b> <Left>
+cnoremap <C-f> <Right>
+cnoremap <C-d> <Delete>
+cnoremap <M-b> <S-Left>
+cnoremap <M-f> <S-Right>
+cnoremap <M-d> <S-Right><Delete>
+
 :set incsearch
 :set ignorecase
 :set smartcase
