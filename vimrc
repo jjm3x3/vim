@@ -1,7 +1,7 @@
 execute pathogen#infect()
-:syntax on
-:nmap j gj
-:nmap k gk
+syntax on
+nmap j gj
+nmap k gk
 
 cnoremap <C-a> <Home>
 cnoremap <C-b> <Left>
@@ -11,16 +11,16 @@ cnoremap <M-b> <S-Left>
 cnoremap <M-f> <S-Right>
 cnoremap <M-d> <S-Right><Delete>
 
-:set incsearch
-:set ignorecase
-:set smartcase
-:set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
 
-:nmap \q :nohlsearch<CR>
-:nmap <C-e> :e#<CR>
+nmap \q :nohlsearch<CR>
+nmap <C-e> :e#<CR>
 
-:nmap <C-n> :bnext<CR>
-:nmap <C-p> :bprev<CR>
+nmap <C-n> :bnext<CR>
+nmap <C-p> :bprev<CR>
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -32,6 +32,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+nmap \e :NERDTreeToggle<CR>
 
 set tabstop=2
 set number
