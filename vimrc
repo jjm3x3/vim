@@ -1,17 +1,21 @@
+"this Section is for vundle start up It mages my plugis for vim
 set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+"This one is necessary and must not be removed
 Plugin 'gmarik/Vundle.vim'
 
+"start adding your own plugins here
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
+"vundle setup ends here contine adding your own junk
 
 syntax on
 nmap j gj
