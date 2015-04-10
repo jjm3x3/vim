@@ -35,6 +35,9 @@ set ignorecase
 set smartcase
 set hlsearch
 
+set splitright
+set splitbelow
+
 nmap \q :nohlsearch<CR>
 nmap <C-e> :e#<CR>
 
@@ -51,6 +54,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
 nmap \b :CtrlPBuffer<CR>
 
