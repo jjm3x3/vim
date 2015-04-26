@@ -62,4 +62,5 @@ nmap \b :CtrlPBuffer<CR>
 nmap \e :NERDTreeToggle<CR>
 
 set tabstop=2
+set expandtab
 set number
