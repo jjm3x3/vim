@@ -1,11 +1,11 @@
 system('mv vim/ .vim/')
-system('cd .vim')
+Dir.chdir('.vim')
 puts "git start:"
 system('git submodule init')
 system('git submodule update')
-puts "Pulgin Install"c
+puts "Pulgin Install"
 system('vim +PluginInstall +qa')
 
-system('cd ..')
+Dir.chdir('..')
 puts "all done!"
 
