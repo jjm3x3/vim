@@ -3,4 +3,4 @@ system('git submodule init')
 system('git submodule update')
 puts "all done!"
 
-system('vim +PluginInstall +qac')
+system('vim +PluginInstall +qa')
