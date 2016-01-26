@@ -67,3 +67,7 @@ set tabstop=2
 set expandtab
 set number
 set laststatus=2
+
+"these are for 'bad' versions of vim (bad vim)
+set nocompatible
+set backspace=2
