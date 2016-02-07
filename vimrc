@@ -64,7 +64,7 @@ let g:ycm_extra_conf_globlist = ['~/Documents/tsrPoop/*']
 nmap \b :CtrlPBuffer<CR>
 
 nmap \e :NERDTreeToggle<CR>
-
+     
 set tabstop=2
 set expandtab
 set shiftwidth=2
@@ -74,3 +74,24 @@ set laststatus=2
 "these are for 'bad' versions of vim (bad vim)
 set nocompatible
 set backspace=2
+
+noremap <leader>c :call CompMe()<cr>
+
+function! CompMe()
+  bd build.out
+  vne
+  silent !go build &>  build.out
+  e build.out
+  redraw!
+  wincmd h
+endfunction
+
+
+
+
+
+
+
+
+
+
