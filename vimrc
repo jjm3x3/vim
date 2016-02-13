@@ -76,6 +76,7 @@ set nocompatible
 set backspace=2
 
 noremap <leader>c :call CompMe()<cr>
+noremap <leader>r :call RunMe()<cr>
 
 function! CompMe()
   bd build.out
@@ -84,9 +85,13 @@ function! CompMe()
   e build.out
   redraw!
   wincmd h
+  silent !rm build.out
+  redraw!
 endfunction
 
-
+function! RunMe()
+  !go run main.go
+endfunction
 
 
 
