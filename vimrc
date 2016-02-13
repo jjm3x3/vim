@@ -67,10 +67,10 @@ nmap \b :CtrlPBuffer<CR>
 
 nmap \e :NERDTreeToggle<CR>
      
-set tabstop=2
+set tabstop=4
 " watch me use tabs 
 "set expandtab " uncomment me for no tabs
-set shiftwidth=2
+set shiftwidth=4
 set number
 set laststatus=2
 
