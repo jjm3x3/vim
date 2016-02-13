@@ -16,6 +16,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 
+Plugin 'benmills/vimux'
+
 call vundle#end()
 filetype plugin indent on
 "vundle setup ends here contine adding your own junk
