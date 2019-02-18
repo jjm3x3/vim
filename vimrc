@@ -78,6 +78,9 @@ set laststatus=2
 set nocompatible
 set backspace=2
 
+set path+=**
+set wildmenu
+
 noremap <leader>c :call CompMe()<cr>
 noremap <leader>r :call RunMe()<cr>
 
